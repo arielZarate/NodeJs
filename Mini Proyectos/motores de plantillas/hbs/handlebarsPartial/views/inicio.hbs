@@ -1,0 +1,34 @@
+
+
+  {{>layout titulo=title }}
+
+  <div class="container ">
+
+    <h1 class="mt-5">{{mensaje}}</h1>
+
+    <table class="table table-striped text-primary">
+
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+
+        </tr>
+      </thead>
+      {{#each datos}}
+        <tbody>
+          <tr>
+            <td>{{this.nombre}}</td>
+            <td>{{this.edad}}</td>
+
+          </tr>
+        </tbody>
+
+      {{/each}}
+    </table>
+
+ 
+
+{{>footer }}
+
+

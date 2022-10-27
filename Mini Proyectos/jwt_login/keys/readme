@@ -1,0 +1,26 @@
+#podemos usar putygen desde la terminal
+#use en este caso use de la pagina de travis tidwll
+https://travistidwell.com/jsencrypt/demo/index.html
+
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDK7L7x5UWRbA3KVtDz4eRUcMrl
+4chvwFEfgHoYyLH4hbcyDNimpMRYdK9GTfxxPZrSvsHJk3DXU1NpOtoxh2qN5spq
+c/wJppcAUn09uer6ACJpexw5zEJtRWYhJltUZVIZX7ogPjoHp66mDWbpqCen1GCD
+MmmWYyYOTtUyuxslNwIDAQAB
+-----END PUBLIC KEY-----
+
+-----BEGIN RSA PRIVATE KEY-----
+MIICWwIBAAKBgQDK7L7x5UWRbA3KVtDz4eRUcMrl4chvwFEfgHoYyLH4hbcyDNim
+pMRYdK9GTfxxPZrSvsHJk3DXU1NpOtoxh2qN5spqc/wJppcAUn09uer6ACJpexw5
+zEJtRWYhJltUZVIZX7ogPjoHp66mDWbpqCen1GCDMmmWYyYOTtUyuxslNwIDAQAB
+AoGALeDitsvwM5WrdIC2Uz1SIykxJlIqv+FKNgYVFL9jRV3t8jnnTZ3Y6mrPKeT9
+2xhjhZwtMgbMr1IefJ8ar7H/C9jMw8R6oKbW7TeFaYoiNzc2tMQHH95tzYAn/ufV
+cB016biePbuicZzxrYobZ3TFQAe+GuaH7gvbBIKx5ClqbxkCQQDydpjtJXA4zC3I
+nfVt4gUgerqz8APNG/cIC6FcA3STo7WwSym/y6PWxYa7FgY6Z3uxDy/D7Etvz9jW
+Qj23j1gzAkEA1kELm/qjSUZoNJRveQwGoKDS7VK9zh9cr+CNyb/4yoK2ksVTp/Ik
+urirA3IETf/yagPBnb8GBGfgm+8eE7mK7QJANcY13oqqG/60vMTDtQ4mwvBVTikS
+PsBQBnnF3MlrZn8tgZ758G6ytKR0YDPfR77BwSA0IMjcZjz7w3FHjNl+3wJALy5j
+wBWRn7FBgVKuuZlMXFMOH/T4l0uQvapVjvgXcYEXc3rA0Vshe3zvK/MPv519ZJsv
+J+3JBW9apvwhQ3a4gQJAEEPZZ2AW1Rt5qgDdF8sEwggAhwdNMCPp3MNAC5Fc4A79
+lvGG/BDdzD6U6tSjkYgHH4QBbLah7mnfTWlCMiHhtw==
+-----END RSA PRIVATE KEY-----
