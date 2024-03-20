@@ -4,7 +4,7 @@ const multer = require("multer");
 
 //====app========
 const app = express();
-app.set("port", 3000);
+app.set("port", 3005);
 
 //========middleware==========
 //===========MULTER===============
@@ -44,7 +44,13 @@ const enviar = function(req, res) {
 
 app.post("/upload", middleware, enviar);
 
+app.get('/',(req,res)=>{
+    
+    res.send("estas con multer")}
+    )
+
 //LLAMAR AL PUERTO
+
 app.listen(app.get("port"), () => {
     console.log("iniciando servivor en el puerto " + `${app.get("port")}`);
 });
