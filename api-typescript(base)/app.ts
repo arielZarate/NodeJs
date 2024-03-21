@@ -1,17 +1,16 @@
-import express, { Application , Request, Response, NextFunction  }   from 'express';
-const app:Application = express();
+import express, { Application,Request, Response, NextFunction } from 'express';
 
-//===============IMPORTACIONES=======================
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 import cors from 'cors'
-//===dotenv=============
 import dotenv from 'dotenv';
+
 dotenv.config();
+const app: Application = express();
 
-import config from './lib/config';
+import config from './src/lib/config';
 
-//==========app=====
+
 app.use(express.urlencoded({ extended: true, limit: '50mb' })); //middleware
 app.use(express.json({ limit: '50mb' }));
 app.use(cookieParser());
@@ -27,22 +26,21 @@ app.use(
 );
 
 
-//=========INTERFACE PARA LOS ERRORES=====================
+
+//======interface=========
 interface error {
     status: number;
     message: string;
 }
 
-
-
-//===middleware=====
-app.use((err:error, req:Request, res:Response, next:NextFunction) => {
+app.use((err: error, req: Request, res: Response, next: NextFunction) => {
     // eslint-disable-line no-unused-vars
     const status = err.status || 500;
     const message = err.message || err;
     console.error(err);
     res.status(status).send(message);
 });
+
 
 
 app.get('/', (req: Request, res: Response) => {
@@ -52,5 +50,5 @@ app.get('/', (req: Request, res: Response) => {
 
 
 
-//exportamos
+//exporto
 export default app;

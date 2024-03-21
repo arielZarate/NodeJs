@@ -1,0 +1,10 @@
+use('Adoptame');
+
+
+//db.Mascotas.find();
+
+
+
+//db.Mascotas.findOne({name:"picha"});
+
+db.Mascotas.findOne({_id:"640cec26a7d8fe9d14b4eb07"});

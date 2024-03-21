@@ -184,3 +184,44 @@ app.listen(3001, function () {
   console.log("App is listening on port 3001!");
 });
 ```
+
+Como pueden ver, la unica diferencia con express normal es que tenemos que agregar ciertos tipados! Probamos que funcione, y debuggeamos nuestro código.
+
+Una vez que funcione, creamos nuestra carpeta routes!
+Todavía no te conte que tipo de app vamos a hacer, la idea es hacer modelo de usuario con nombre y apellido.
+Entonces, en la carpeta routes creamos nuestro index.ts y user.ts
+En user.ts generamos nuestras rutas!
+
+```javascript
+import { Response, Request, Router } from "express";
+
+router.get("/", (req: Request, res: Response) => {
+  res.send("soy la ruta get!");
+});
+
+router.post("/", (req: Request, res: Response) => {
+  res.send("soy la ruta post!");
+});
+
+export default router;
+```
+
+Y en nuestro index.ts dentro de la carpeta routes:
+
+```javascript
+import { Router } from "express";
+import userRoutes from "./user";
+const router = Router();
+
+router.use("/user", userRoutes);
+
+export default router;
+```
+
+Ahora volvemos a nuestro app.ts, y agregamos nuestras rutas!
+
+```javascript
+import routes from "./routes/index";
+//-----------------------------------
+app.use("/api", routes);
+```
